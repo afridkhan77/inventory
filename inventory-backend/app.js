@@ -34,7 +34,7 @@ const limiter = rateLimit({windowMs: 15*60*1000,max:3000})
 app.use(limiter);
 
 //mongodb database donnection
-let URI="mongodb+srv://<username>:<password>@cluster0.7uslu.mongodb.net/inven?retryWrites=true&w=majority";
+let URI="mongodb+srv://testuser7777:<password>@cluster0.qctaw7c.mongodb.net/?retryWrites=true&w=majority";
 let OPTION={user:'testuser7777',pass:'testuser7777',autoIndex:true}
 mongoose.connect(URI,OPTION,(error)=>{
     console.log("Connection Success")
